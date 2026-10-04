@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Aditya Parkhe — Data Science Portfolio</title>
+<meta name="description" content="Aditya Parkhe — BSc Data Science 2nd Year. Python, SQL, ML, Statistical Analysis, Visualization." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-row">
+      <a href="#home" class="brand">
+        <span class="brand-mark">A<span class="dot">·</span>P</span>
+        <span class="sub">Data Science · Portfolio</span>
+      </a>
+      <div class="menu">
+        <a href="#home"      class="nav-link active">Home</a>
+        <a href="#about"     class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills"    class="nav-link">Skills</a>
+        <a href="#projects"  class="nav-link">Projects</a>
+        <a href="#experience"class="nav-link">Experience</a>
+        <a href="#contact"   class="nav-link">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="ico-sun" aria-hidden="true">☼</span>
+          <span class="ico-moon" aria-hidden="true">☾</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home"      class="m-link">Home</a>
+      <a href="#about"     class="m-link">About</a>
+      <a href="#education" class="m-link">Education</a>
+      <a href="#skills"    class="m-link">Skills</a>
+      <a href="#projects"  class="m-link">Projects</a>
+      <a href="#experience"class="m-link">Experience</a>
+      <a href="#contact"   class="m-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-text reveal in">
+        <div class="eyebrow">BSc Data Science · 2nd Year · 2024–2027</div>
+        <h1 class="headline">
+          Hi, I'm <span class="accent">Aditya Parkhe</span>.<br/>
+          A <span class="type" id="type"></span><span class="caret">|</span>
+        </h1>
+        <p class="lede">A 2nd-year Data Science undergraduate building a foundation in statistics, Python, SQL, and machine learning. I love cleaning messy datasets, finding patterns others miss, and presenting insights that actually change something.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#contact">Contact Me</a>
+          <a class="btn ghost" href="#projects">View Projects</a>
+        </div>
+        <div class="socials" aria-label="Social links">
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 .3a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.31.76-1.61-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.47 5.93.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3"/></svg></a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V10.5H5.67v7.84h2.67zM7 9.16a1.55 1.55 0 1 0 0-3.11 1.55 1.55 0 0 0 0 3.11zm11.34 9.18v-4.59c0-2.46-1.31-3.6-3.06-3.6-1.42 0-2.06.78-2.41 1.34V10.5h-2.67c.04.75 0 7.84 0 7.84h2.67v-4.37c0-.24.02-.47.09-.64.19-.47.63-.96 1.37-.96.97 0 1.36.74 1.36 1.83v4.14h2.65z"/></svg></a>
+          <a href="mailto:aditya.parkhe.ds@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 8.06L4.62 7.5H19.4L12 13.06z"/></svg></a>
+        </div>
+      </div>
+      <div class="portrait-wrap reveal in">
+        <div class="portrait-frame">
+          <img src="aditya.jpg" alt="Aditya Parkhe — portrait" class="portrait-img" />
+          <span class="frame-dot tl"></span><span class="frame-dot tr"></span>
+          <span class="frame-dot bl"></span><span class="frame-dot br"></span>
+          <span class="portrait-tag">DISCIPLINE BUILDS<br/>FREEDOM</span>
+          <span class="portrait-id">A · PARKHE</span>
+        </div>
+      </div>
+    </div>
+    <a class="scroll-cue" href="#about" aria-label="Scroll"><svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 16.5 5.5 10l1.4-1.4L12 13.7l5.1-5.1L18.5 10l-6.5 6.5z"/></svg></a>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="alt">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <span class="num">01 — About</span>
+        <h2>A <em>curious</em> mind with a <em>statistical</em> soul.</h2>
+        <div class="rule"></div>
+        <p>I'm a 2nd-year BSc Data Science student who fell in love with data while exploring a Kaggle dataset in high school. Today I spend my time between lectures doing exploratory analyses, building dashboards, and trying to crack tough probability problems.</p>
+      </div>
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <p>My coursework covers <span class="hl">Linear Algebra, Probability &amp; Statistics, Python for Data Science, Database Systems (SQL), and Introductory Machine Learning</span>. I complement this with self-driven projects using real-world datasets — everything from weather patterns to sports analytics.</p>
+          <p>Outside academics, I co-coordinate a small <span class="hl">campus data club</span> where 15 of us meet weekly to discuss a paper, share dashboards, and host data-storytelling nights for juniors. I believe the best way to learn data science is to keep showing your work.</p>
+          <p>I'm currently looking for a <span class="hl">summer 2026 internship</span> in data analytics or applied ML — and any junior research assistant role that needs someone who actually enjoys cleaning CSV files.</p>
+        </div>
+        <div class="fact-grid">
+          <div class="fact-card">
+            <div class="fact-icon fact-icon-blue"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 2c-3.3 0-10 1.7-10 5v2h20v-2c0-3.3-6.7-5-10-5z"/></svg></div>
+            <h4>Personal Info</h4>
+            <ul>
+              <li><span class="k">Email</span><span class="v">aditya.parkhe.ds@gmail.com</span></li>
+              <li><span class="k">Location</span><span class="v">Maharashtra, India</span></li>
+              <li><span class="k">Status</span><span class="v">Open to internships</span></li>
+            </ul>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon fact-icon-violet"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 3 2 9l10 6 8-4.8V17h2V9L12 3zm-5 9.4-3-1.8V14l3 1.8v-3.4zM12 18.3 4 14.7V18l8 4 8-4v-3.3l-8 3.6z"/></svg></div>
+            <h4>Education</h4>
+            <ul>
+              <li><span class="k">Degree</span><span class="v">BSc Data Science</span></li>
+              <li><span class="k">University</span><span class="v">[ Add yours ]</span></li>
+              <li><span class="k">Year</span><span class="v">2nd · 2024–27</span></li>
+            </ul>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon fact-icon-green"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20 6h-4V4l-2-2h-4L8 4v2H4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2zM10 4h4v2h-4V4z"/></svg></div>
+            <h4>Experience</h4>
+            <ul>
+              <li><span class="k">Projects</span><span class="v">10+ end-to-end</span></li>
+              <li><span class="k">Role</span><span class="v">Data Club Lead</span></li>
+              <li><span class="k">Focus</span><span class="v">Analytics · ML</span></li>
+            </ul>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon fact-icon-rose"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M3 3h18v2H3V3zm2 4h14v14H5V7zm3 3v6h2v-6H8zm4 0v8h2v-8h-2z"/></svg></div>
+            <h4>Interests</h4>
+            <ul>
+              <li><span class="v single">Statistical Modelling</span></li>
+              <li><span class="v single">Machine Learning</span></li>
+              <li><span class="v single">Data Storytelling</span></li>
+              <li><span class="v single">Open-source Python</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <span class="num">02 — Education</span>
+        <h2>Where I'm <em>learning.</em></h2>
+        <div class="rule"></div>
+      </div>
+      <div class="timeline">
+        <div class="t-line" aria-hidden="true"></div>
+        <div class="t-item reveal">
+          <div class="t-dot"><svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 3 1 9l11 6 9-5v6h2V9L12 3zM5 13.2v4L12 20l7-2.8v-4l-7 3.8-7-3.8z"/></svg></div>
+          <div class="t-card"><div class="t-period">2024 — 2027 (in progress)</div><h3>BSc Data Science</h3><div class="t-inst">[ Add your college / university here ]</div><p>Core coursework: Calculus &amp; Linear Algebra, Probability &amp; Statistics, Python for Data Science, Database Systems, Intro to Machine Learning, Data Visualisation, Discrete Mathematics. Currently in 2nd year, Semester 3 — data structures &amp; regression track.</p><span class="t-badge">2nd Year · CGPA: [ update me ]</span></div>
+        </div>
+        <div class="t-item reveal">
+          <div class="t-dot"><svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2 4 6v6c0 5 3.4 9.7 8 10 4.6-.3 8-5 8-10V6l-8-4zm-1 14-4-4 1.4-1.4L11 13.2l5.6-5.6L18 9l-7 7z"/></svg></div>
+          <div class="t-card"><div class="t-period">2025 · Self-paced</div><h3>Google Data Analytics Professional Certificate</h3><div class="t-inst">Coursera</div><p>Foundation in data cleaning, visualisation, SQL, R and the analytical workflow — applied to two certificate projects.</p></div>
+        </div>
+        <div class="t-item reveal">
+          <div class="t-dot"><svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2 4 6v6c0 5 3.4 9.7 8 10 4.6-.3 8-5 8-10V6l-8-4zm-1 14-4-4 1.4-1.4L11 13.2l5.6-5.6L18 9l-7 7z"/></svg></div>
+          <div class="t-card"><div class="t-period">2024 · Practical</div><h3>Kaggle — Pandas &amp; Data Cleaning Micro-courses</h3><div class="t-inst">Kaggle</div><p>Hands-on practice with reshaping data, handling missing values, joins and aggregations on real datasets.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="alt">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <span class="num">03 — Skills</span>
+        <h2>Skills &amp; <em>expertise.</em></h2>
+        <div class="rule"></div>
+        <p>A focused toolkit shaped by two years of coursework, Kaggle weekends, and late-night Jupyter sessions.</p>
+      </div>
+      <div class="skills-grid reveal">
+        <article class="skill-card">
+          <header class="skill-head sh-blue">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M22 5.7 12 1 2 5.7v12.6L12 23l10-4.7V5.7zM12 3.3l7 3.3v8.4L12 18.7 5 15v-8.4l7-3.3z"/></svg>
+            <h3>Core Data Skills</h3>
+          </header>
+          <div class="skill-body">
+            <div class="chip"><span class="chip-ico chip-blue">◆</span>Exploratory Data Analysis</div>
+            <div class="chip"><span class="chip-ico chip-blue">◆</span>Statistical Inference</div>
+            <div class="chip"><span class="chip-ico chip-blue">◆</span>Feature Engineering</div>
+            <div class="chip"><span class="chip-ico chip-blue">◆</span>Model Evaluation</div>
+          </div>
+        </article>
+        <article class="skill-card">
+          <header class="skill-head sh-violet">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="m9.4 16.6-4.2-4.2L1.5 16l7.9 7.9L23 10.3l-3.7-3.7L9.4 16.6z"/></svg>
+            <h3>Programming</h3>
+          </header>
+          <div class="skill-body">
+            <div class="chip"><span class="chip-ico chip-violet">⌘</span>Python (NumPy, Pandas)</div>
+            <div class="chip"><span class="chip-ico chip-violet">σ</span>SQL (MySQL, SQLite)</div>
+            <div class="chip"><span class="chip-ico chip-violet">R</span>R (tidyverse)</div>
+            <div class="chip"><span class="chip-ico chip-violet">&lt;/&gt;</span>HTML / CSS · JS basics</div>
+            <div class="chip"><span class="chip-ico chip-violet">⌥</span>Git &amp; GitHub</div>
+          </div>
+        </article>
+        <article class="skill-card">
+          <header class="skill-head sh-green">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M3 5h18v3H3V5zm0 6h18v3H3v-3zm0 6h18v3H3v-3z"/></svg>
+            <h3>Data Science Toolbox</h3>
+          </header>
+          <div class="skill-body">
+            <div class="chip"><span class="chip-ico chip-green">⊞</span>Jupyter · Colab</div>
+            <div class="chip"><span class="chip-ico chip-green">▣</span>Matplotlib · Seaborn</div>
+            <div class="chip"><span class="chip-ico chip-green">⚙</span>scikit-learn</div>
+            <div class="chip"><span class="chip-ico chip-green">◑</span>Power BI · DAX</div>
+            <div class="chip"><span class="chip-ico chip-green">⌗</span>Excel (Pivot · VBA)</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <span class="num">04 — Projects</span>
+        <h2>Featured <em>projects.</em></h2>
+        <div class="rule"></div>
+        <p>Click any card to view the full breakdown (description, role, and tools used).</p>
+      </div>
+      <div class="proj-grid">
+        <article class="proj-card reveal" data-id="p1">
+          <div class="proj-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="34" height="34"><path d="M3 3h18v2H3V3zm2 4h14v3H5V7zm0 5h14v3H5v-3zm0 5h14v3H5v-3zM3 20h18v2H3v-2z"/></svg></div>
+          <div class="proj-body"><h3>IPL Auction — Bid Pattern Analysis</h3><p>12 seasons of IPL auction data analysed for how team budgets, role scarcity and overseas caps drive final bids.</p><div class="proj-tech"><span>Python</span><span>Pandas</span><span>Seaborn</span></div><button class="proj-btn" data-open="p1">View Details</button></div>
+        </article>
+        <article class="proj-card reveal" data-id="p2">
+          <div class="proj-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="34" height="34"><path d="M4 5h16v3H4V5zm0 5h16v9H4v-9zm3 2v5h2v-5H7zm4 0v5h2v-5h-2z"/></svg></div>
+          <div class="proj-body"><h3>Library Circulation SQL Engine</h3><p>A normalised schema + 30+ analytical queries for our college library — used as a sanity-check tool by the librarian.</p><div class="proj-tech"><span>MySQL</span><span>Schema</span><span>SQL</span></div><button class="proj-btn" data-open="p2">View Details</button></div>
+        </article>
+        <article class="proj-card reveal" data-id="p3">
+          <div class="proj-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="34" height="34"><path d="M3 17 9 11l4 4 8-8v6h2V3h-10v2h6l-6 6-4-4-8 8 2 2z"/></svg></div>
+          <div class="proj-body"><h3>Rainfall Predictor — Maharashtra</h3><p>Logistic Regression + Random Forest on 30 years of IMD district data to predict above-normal monsoon rainfall.</p><div class="proj-tech"><span>scikit-learn</span><span>Pandas</span><span>Stats</span></div><button class="proj-btn" data-open="p3">View Details</button></div>
+        </article>
+        <article class="proj-card reveal" data-id="p4">
+          <div class="proj-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="34" height="34"><path d="M3 13h2v8H3v-8zm4-6h2v14H7V7zm4-3h2v17h-2V4zm4 6h2v11h-2V10zm4 3h2v8h-2v-8z"/></svg></div>
+          <div class="proj-body"><h3>Student Performance Dashboard</h3><p>Interactive Power BI report combining attendance, internal marks and quiz scores — used by my Stats professor.</p><div class="proj-tech"><span>Power BI</span><span>DAX</span><span>Excel</span></div><button class="proj-btn" data-open="p4">View Details</button></div>
+        </article>
+        <article class="proj-card reveal" data-id="p5">
+          <div class="proj-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="34" height="34"><path d="M4 4h16v16H4V4zm2 2v12h12V6H6zm2 2h8v2H8V8zm0 4h8v2H8v-2zm0 4h5v2H8v-2z"/></svg></div>
+          <div class="proj-body"><h3>Sentiment on Movie Reviews (NLP intro)</h3><p>TF-IDF + Logistic Regression baseline on IMDB 50K, compared with a simple LSTM — wrote a reproducibility notebook.</p><div class="proj-tech"><span>scikit-learn</span><span>NLTK</span><span>Keras</span></div><button class="proj-btn" data-open="p5">View Details</button></div>
+        </article>
+        <article class="proj-card reveal" data-id="p6">
+          <div class="proj-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="34" height="34"><path d="M3 5h18v3H3V5zm2 5h14v9H5v-9zm3 2v5h2v-5H8zm4 0v5h2v-5h-2z"/></svg></div>
+          <div class="proj-body"><h3>PyClean — Lightweight CSV Cleaner</h3><p>Personal utility package to detect duplicates, mixed-type columns and obvious outliers — built to learn packaging + pytest.</p><div class="proj-tech"><span>Python</span><span>pytest</span><span>CLI</span></div><button class="proj-btn" data-open="p6">View Details</button></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT MODAL -->
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <header class="modal-head">
+        <div class="modal-icon" id="modalIcon"></div>
+        <h3 id="modalTitle"></h3>
+        <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      </header>
+      <div class="modal-body">
+        <p id="modalDetails"></p>
+        <h4>Technologies Used</h4>
+        <div class="proj-tech" id="modalTech"></div>
+      </div>
+      <footer class="modal-foot">
+        <button class="btn ghost" id="modalClose2" type="button">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="alt">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <span class="num">05 — Experience</span>
+        <h2>Volunteer &amp; <em>leadership.</em></h2>
+        <div class="rule"></div>
+      </div>
+      <div class="exp-grid reveal">
+        <article class="exp-card">
+          <div class="exp-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 21.4 3.7 13a8.5 8.5 0 0 1 12-12 8.5 8.5 0 0 1 12 12L12 21.4z"/></svg></div>
+          <div class="exp-meta"><div class="exp-period">2024 · State Election IT Cell</div><h3>Elections IT Support</h3><div class="exp-org">Vidhansabha &amp; Loksabha Elections 2024</div></div>
+          <ul class="exp-list">
+            <li>Monitored and repaired IT systems during election processes</li>
+            <li>Provided network troubleshooting and problem-solving support</li>
+            <li>Ensured smooth operation of election technology infrastructure</li>
+            <li>Collaborated with election officials to address technical issues promptly</li>
+          </ul>
+        </article>
+        <article class="exp-card">
+          <div class="exp-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 2a5 5 0 0 1 5 5v3a5 5 0 0 1-10 0V7a5 5 0 0 1 5-5zm-9 18a9 9 0 1 1 18 0v1H3v-1z"/></svg></div>
+          <div class="exp-meta"><div class="exp-period">2023 · Gondwana University</div><h3>Disaster Management Volunteer</h3><div class="exp-org">State-Level Disaster Management Camp 'AVHAN 2023'</div></div>
+          <ul class="exp-list">
+            <li>Residential program under NSS covering rescue + relief operations</li>
+            <li>Trained in emergency response and crisis management</li>
+            <li>Built leadership via disaster-simulation exercises with teams</li>
+            <li>Campus Data Club co-lead, ~15 active members</li>
+          </ul>
+        </article>
+      </div>
+      <div class="extra-card reveal">
+        <h3>Extracurricular Activities</h3>
+        <p>Represented college in <span class="hl">Football, Kho-Kho, and Athletics</span> competitions. Participated in intercollegiate meets — sport taught me how to take feedback fast, perform under pressure, and build team chemistry that actually ships.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <span class="num">06 — Contact</span>
+        <h2>Get in <em>touch.</em></h2>
+        <div class="rule"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-form-wrap reveal">
+          <h3>Send me a message</h3>
+          <div class="form-success" id="formSuccess" hidden>✓ Message sent successfully! I'll get back to you soon.</div>
+          <form id="contactForm" novalidate>
+            
+            <div class="form-row">
+              <div class="field"><label for="cf-name">Name</label><input id="cf-name" name="name" type="text" required placeholder="Your name" /></div>
+              <div class="field"><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" required placeholder="you@example.com" /></div>
+            </div>
+            <div class="field"><label for="cf-subject">Subject</label><input id="cf-subject" name="subject" type="text" required placeholder="Internship / Collaboration / Talk" /></div>
+            <div class="field"><label for="cf-message">Message</label><textarea id="cf-message" name="message" rows="6" required placeholder="What would you like to discuss?"></textarea></div>
+            <button class="btn primary full" id="submitBtn" type="submit">
+              <span class="btn-label"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M2.3 20.7 22 12 2.3 3.3l-1 7.6L17 12l-15.7 1.1 1 7.6z"/></svg>Send Message</span>
+              <span class="btn-spinner" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" fill="none" opacity=".3"/><path d="M12 2a10 10 0 0 1 10 10" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/></svg>Sending...</span>
+            </button>
+          </form>
+        </div>
+        <div class="contact-info-wrap reveal">
+          <h3>Contact Information</h3>
+          <div class="info-card"><div class="info-ico"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg></div><div><div class="info-k">Location</div><div class="info-v">Maharashtra, India</div></div></div>
+          <div class="info-card"><div class="info-ico"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 8.06L4.62 7.5H19.4L12 13.06z"/></svg></div><div><div class="info-k">Email</div><div class="info-v">aditya.parkhe.ds@gmail.com</div></div></div>
+          <div class="cta-card">
+            <h4>Let's Connect!</h4>
+            <p>Looking for opportunities in data analytics, applied ML, and summer 2026 internships — feel free to reach out.</p>
+            <div class="cta-icons">
+              <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 .3a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.31.76-1.61-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.47 5.93.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3"/></svg></a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V10.5H5.67v7.84h2.67zM7 9.16a1.55 1.55 0 1 0 0-3.11 1.55 1.55 0 0 0 0 3.11zm11.34 9.18v-4.59c0-2.46-1.31-3.6-3.06-3.6-1.42 0-2.06.78-2.41 1.34V10.5h-2.67c.04.75 0 7.84 0 7.84h2.67v-4.37c0-.24.02-.47.09-.64.19-.47.63-.96 1.37-.96.97 0 1.36.74 1.36 1.83v4.14h2.65z"/></svg></a>
+              <a href="mailto:aditya.parkhe.ds@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 8.06L4.62 7.5H19.4L12 13.06z"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand-mark footer-brand">A<span class="dot">·</span>P</div>
+        <p class="footer-tag">BSc Data Science · 2nd Year · Data Storyteller in Progress</p>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 .3a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.31.76-1.61-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.47 5.93.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3"/></svg></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V10.5H5.67v7.84h2.67zM7 9.16a1.55 1.55 0 1 0 0-3.11 1.55 1.55 0 0 0 0 3.11zm11.34 9.18v-4.59c0-2.46-1.31-3.6-3.06-3.6-1.42 0-2.06.78-2.41 1.34V10.5h-2.67c.04.75 0 7.84 0 7.84h2.67v-4.37c0-.24.02-.47.09-.64.19-.47.63-.96 1.37-.96.97 0 1.36.74 1.36 1.83v4.14h2.65z"/></svg></a>
+        <a href="mailto:aditya.parkhe.ds@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 8.06L4.62 7.5H19.4L12 13.06z"/></svg></a>
+      </div>
+    </div>
+    <div class="container footer-meta">© <span id="copyright-year">2026</span> Aditya Parkhe · BSc Data Science · Built with HTML, CSS &amp; JS — and a lot of <span class="heart">❤</span></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
